@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modelo1</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#" class="logo">Modulo-1</a>
+      <ul class="nav-menu">
+        <li><a href="#">Incio</a></li>
+        <li><a href="#">Contacto</a></li>
+
+      </ul>
+     
+    </nav>
+  </header>
+  <main>
+    <h1>Control de Expedientes</h1>
+    <p></p>
+    <div class="upload-section">
+      <h2>Subir Documento</h2>
+      <form id="upload-form">
+        <div class="file-upload">
+          <input type="file" id="file" name="file" accept=".pdf,.doc,.docx,.xls,.xlsx">
+          <small id="file-size-info">30 MB</small>
+          <button type="submit">Subir</button>
+        </div>
+      </form>
+      
+    </div>
+    <div class="comment-section">
+      <h2>Agregar un comentario</h2>
+      <textarea id="comment" name="comment" placeholder="Escribe tu comentario aquí..." rows="4"></textarea>
+      <button id="submit-comment">Subir</button>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 Protox. Todos los derechos reservados.</p>
+    <div id="footer-dropdown-menu" class="dropdown-menu hidden">
+      <a href="#">Terms of Service</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">About Us</a>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

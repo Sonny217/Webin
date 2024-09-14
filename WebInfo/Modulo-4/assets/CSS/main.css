@@ -1,0 +1,170 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #ffffff, #9c9999); /* Degradado de gris claro a blanco */
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    background: linear-gradient(to bottom, #b6b000, #005a8d); /* Degradado de azul claro a azul oscuro */
+    border-bottom: 1px solid #005a8d; /* Mantén el borde inferior como está o ajústalo según el nuevo diseño */
+    color: white; /* Asegúrate de que el texto sea legible sobre el fondo degradado */
+    padding: 10px 20px; /* Ajusta el espaciado si es necesario */
+    display: flex; /* Asegúrate de que el diseño flexbox esté correcto */
+    justify-content: space-between; /* Distribuye los elementos como desees */
+    align-items: center; /* Alinea los elementos verticalmente */
+  }
+  
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  
+  .navbar svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+  
+  .nav-links {
+    display: flex;
+    margin-left: auto;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin: 0 10px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main Section */
+  .hero {
+    padding: 40px 20px;
+  }
+  
+  .hero-content {
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    color: #666;
+    font-size: 1.1em;
+  }
+  
+  /* Form Container */
+  .form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-container h2 {
+    font-size: 1.8em;
+    color: #0077b6;
+    margin-bottom: 10px;
+  }
+  
+  .form-container p {
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  input[type="file"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    background: #f9f9f9;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    background: #f9f9f9;
+  }
+  
+  button {
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  button:hover {
+    background-color: #005a8d;
+  }
+  
+  /* Footer */
+  footer {
+    background: linear-gradient(to top, #8d8d00, #002ab6); /* Degradado de azul oscuro a azul claro */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #005a8d; /* Puedes ajustar el color del borde si es necesario */
+  }
+  
+  
+  .footer-nav {
+    margin-top: 10px;
+  }
+  
+  .footer-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .footer-nav a:hover {
+    text-decoration: underline;
+  }
+  

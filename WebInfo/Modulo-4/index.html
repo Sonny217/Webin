@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Expedientes</title>
+  <link rel="stylesheet" href="assets/CSS/main.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="#" class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg>
+        <span class="sr-only">INfopro</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Quiénes somos</a></li>
+        <li><a href="#">Oferta de formación</a></li>
+        <li><a href="#">Oferta de formación</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Control de archivos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Gestiona tus archivos con facilidad</h1>
+          <p>Fecha Limite 07/01/2013</p>
+        </div>
+        <div class="form-container">
+          <h2>Cargar Expedientes</h2>
+          <p>Añade un archivo de hasta 30 MB e incluye un comentario.</p>
+          <form id="upload-form">
+            <div class="form-group">
+              <label for="file">Subir Archivo</label>
+              <input
+                id="file"
+                type="file"
+                accept=".pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx"
+                required
+              />
+              <small>Tamaño máximo del archivo: 30 MB</small>
+            </div>
+            <div class="form-group">
+              <label for="comment">Comentario</label>
+              <textarea id="comment" rows="3" placeholder="Escriba aquí su comentario..."></textarea>
+            </div>
+            <button type="submit">Subir</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024  Todos los derechos reservados.</p>
+    <nav class="footer-nav">
+      <a href="#">Condiciones de uso</a>
+      <a href="#">Privacidad</a>
+    </nav>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onda Oceánica - Prototipo</title>
+    <style>
+        /* Estilo general del cuerpo con un degradado de azul a amarillo */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #668eb8, #ffcc00); /* Degradado de azul claro a amarillo */
+            min-height: 100vh;
+        }
+        
+        /* Estilo del encabezado */
+        header {
+            background-color: #232268; /* Azul oscuro */
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        #logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        #upload-btn {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background-color: #004080; /* Azul oscuro */
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 2rem;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        /* Estilo del módulo de subida de archivos y comentarios */
+        #upload-module {
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 600px;
+            background-color: white;
+            border: 3px solid #000000; /* Borde negro más grueso */
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        #upload-module h2 {
+            margin-top: 0;
+            color: #004080; /* Azul oscuro */
+        }
+        
+        #upload-module p {
+            color: #333;
+        }
+        
+        input[type="file"] {
+            display: block;
+            margin: 1rem auto;
+            padding: 0.5rem;
+            border: 1px solid #004080; /* Azul oscuro */
+            border-radius: 4px;
+        }
+        
+        input[type="submit"] {
+            background-color: #004080; /* Azul oscuro */
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #003366; /* Azul aún más oscuro en hover */
+        }
+        
+        .warning {
+            color: red;
+            font-weight: bold;
+        }
+        
+        /* Estilo para el área de comentarios */
+        #comments {
+            margin-top: 2rem;
+            background-color: white;
+            border-radius: 8px;
+            padding: 1rem;
+            border: 1px solid #004080; /* Azul oscuro */
+        }
+        
+        #comment-input {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #004080; /* Azul oscuro */
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">Logo</div>
+    </header>
+    
+    <!-- Módulo para subir archivos y opcionalmente dejar un comentario -->
+    <section id="upload-module">
+        <h2>Sube tu documento</h2>
+        <p class="warning">¡Advertencia! El documento debe estar en formato PDF.</p>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" id="file-input" name="file" accept=".pdf" required>
+            <p>Fecha límite: <strong>30 de septiembre de 2024</strong></p>
+            <textarea id="comment-input" name="comment" placeholder="Escribe tu comentario (opcional)..."></textarea>
+            <input type="submit" value="Subir Documento">
+        </form>
+    </section>
+    
+    <button id="upload-btn">+</button>
+</body>
+</html>
